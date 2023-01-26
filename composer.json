@@ -18,10 +18,10 @@
         }
     ],
     "require": {
-        "illuminate/support": "~5.1",
-        "illuminate/database": "~5.1",
-        "illuminate/console": "~5.1",
-        "php" : "~5.5|~7.0",
+        "illuminate/support": "^8 || ^9",
+        "illuminate/database": "^8 || ^9",
+        "illuminate/console": "^8 || ^9",
+        "php" : "~5.5|~7.0|^8",
         "chargebee/chargebee-php": "^2.7.7",
         "stripe/stripe-php": "^3.14"
     },
@@ -46,6 +46,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": false
         }
     }
 }
